@@ -4,8 +4,8 @@ and the relationships between them.
 
 # Entities and Attributes:
   User
-      ID (Primary Key)
-      
+  
+      ID (Primary Key)  
       Login
       Password
       FirstName
@@ -14,12 +14,14 @@ and the relationships between them.
       Email
       SubscribedToNewsletter
     
-  - Show
+  Show
+
       ID (Primary Key)
       Name
       Category
 
-  - Episode
+  Episode
+  
       ID (Primary Key)
       ShowID (Foreign Key referencing Show)
       Title
@@ -27,7 +29,8 @@ and the relationships between them.
       Duration
       ReleaseDate
 
-  - Video
+  Video
+  
       ID (Primary Key)
       EpisodeID (Foreign Key referencing Episode)
       AvailableUntil
@@ -36,21 +39,25 @@ and the relationships between them.
       ImageFormat
       Country
 
-  - UserShowSubscription
+  UserShowSubscription
+  
       UserID (Foreign Key referencing User)
       ShowID (Foreign Key referencing Show)
       SubscriptionDate
 
-  - UserFavoriteVideo
+  UserFavoriteVideo
+  
       UserID (Foreign Key referencing User)
       VideoID (Foreign Key referencing Video)
 
-  - UserWatchHistory
+  UserWatchHistory
+  
       UserID (Foreign Key referencing User)
       VideoID (Foreign Key referencing Video)
       WatchDate
 
-  - VideoSuggestion
+  VideoSuggestion
+  
       UserID (Foreign Key referencing User)
       VideoID (Foreign Key referencing Video)
       SuggestedDate
