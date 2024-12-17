@@ -3,7 +3,7 @@ In the E/A model, we represent the system with entities, their attributes,
 and the relationships between them.
 
 # Entities and Attributes:
-  - User
+  User
       ID (Primary Key)
       Login
       Password
