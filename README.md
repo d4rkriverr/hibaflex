@@ -4,7 +4,8 @@ and the relationships between them.
 
 # Entities and Attributes:
   User
-      ID (Primary Key) \n
+      ID (Primary Key)
+      
       Login
       Password
       FirstName
